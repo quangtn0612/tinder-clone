@@ -1,0 +1,24 @@
+.cardImage{
+  width: 500px;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+  position: relative;
+}
+
+.cardAPI{
+  position: absolute;
+}
+.cardContainer{
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+h3{
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
