@@ -1,21 +1,31 @@
 .cardImage{
   width: 500px;
   height: 500px;
-  background-position: center;
   background-size: cover;
   border-radius: 25px;
   position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .cardAPI{
   position: absolute;
+
 }
 .cardContainer{
-  display: block;  
+  /* display: block;  
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 50%; */
+  display: flex;
+  justify-content: center;
 }
+.card{
+  background-position: center;
+
+}
+
+
 h3{
   color: white;
   position: absolute;
