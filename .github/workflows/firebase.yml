@@ -23,11 +23,27 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '16'
-      - run: npm ci
-      - run: npm run build
-      - name: GitHub Action for Firebase
-        uses: w9jds/firebase-action@v1.5.0
+      - run: yarn install
+      - run: yarn build
+      - name: Archive Build
+        uses: actions/upload-artifact@v2
         with:
+          name: build
+          path: build
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-lastest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download Build
+        uses: actions/download-artifact@v2
+        with:
+          name: build
+          path: build
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@v1.5.0
+        with: 
           args: deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
