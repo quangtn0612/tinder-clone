@@ -26,6 +26,9 @@ jobs:
       - name: yarn install, build and test
         run: |
           yarn install
+          rm -rf node_modules
+          yarn cache clean
+          yarn
           yarn build
       - name: Archive Build
         uses: actions/upload-artifact@v2
