@@ -1,10 +1,13 @@
 # Getting Started with Create React App
 
 This project is a tinder-clone application:
+
 Font-end:
-#https://tinder-clone-b1b14.web.app/
+# https://tinder-clone-b1b14.web.app/
+
 Back-end:
-#https://tinder-backend-2s1.herokuapp.com/tinder/cards
+# https://tinder-backend-2s1.herokuapp.com/tinder/cards
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
