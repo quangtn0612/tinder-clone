@@ -1,9 +1,10 @@
 .SwipeButtons{
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items:baseline;
   margin: 30px 0px;
-  
+  position: relative;
+  top: 520px;
 }
 .SwipeButtons .Button{
   box-shadow: 2px 2px 10px;
